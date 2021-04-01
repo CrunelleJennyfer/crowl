@@ -1,0 +1,20 @@
+////
+/// Layout of the page
+///
+/// @group Elements
+///
+////
+
+/// Text default font and color
+body {
+  background: $white;
+  background-size: 10rem;
+  font-family: $font;
+  font-weight: $fw-regular;
+  color: $color-text;
+}
+
+.flex {
+  display: flex;
+  margin-top: 10rem;
+}

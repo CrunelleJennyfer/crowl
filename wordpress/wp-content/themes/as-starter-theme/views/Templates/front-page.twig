@@ -1,0 +1,82 @@
+{% extends 'Layouts/base.twig' %}
+
+{% block content %}
+    {{post.content}}
+
+    <section class="orange flex container">
+        <div class="orange__main-title">
+            <h1>Exploitez enfin toutes les ressources digitales</h1>
+            <h5>Solutions et outils de veille sur-mesure pour professionnels</h5>
+            <div class="orange__newsletter">
+                <input id="mail" type="mail" placeholder="Votre mail">
+                <input id="submit" type="submit" value="Demander une démo">
+            </div>
+        </div>
+        <div classe="orange__main-img">
+            <img src="{{theme.path}}/assets/img/illu-principale">
+        </div>
+    </section>
+
+    <section class="bleu flex container">
+        <div class="bleu__main-title">
+            <h2>L'intelligence économique</h2>
+        </div>
+        <div class="bleu__txt">
+            <h3>Tirer le meilleur d'une information colossale</h3>
+            <p>Envie d’en savoir plus sur les opportunités qui s’offrent à vous et les menaces auxquelles vous pourrez être confronté ?</p>
+            <p>L’Intelligence économique vous permet d’appréhender au mieux votre environnement et d’anticiper les évolutions dans les domaines clés : marché, innovation, réglementation, digital, territoire, stratégie, etc.</p>
+        </div>
+    </section>
+
+    <section class="">
+    <h1>Surveillez tout ce que vous souhaitez, en continu</h1>
+    <p>Solutions d’automatisation de la collecte et du traitement de vos sources d’informations.</p>
+    <a class="nav-link" href="#">Découvrir Crawler</a>
+    </section>
+    
+    <section class="">
+    <h1>Transformez l’information en données exploitables</h1>
+    <p>Solution d’enrichissement, de modélisation et de classement de contenus.  </p>
+    <a class="nav-link" href="#">Découvrir Pilot</a>
+    </section>
+
+    <section class="">
+    <h1>Pour chacun, la bonne info, au bon format, au bon moment</h1>
+    <p>Solution de diffusion d’informations et d’aide à la décision.</p>
+    <a class="nav-link" href="#">Découvrir Platform</a>
+    </section>
+
+    <section class="">
+    <h1>Nos solutions sont parfaites pour</h1>
+    <div>
+        <div>
+            <h1>Dirigeant d’entreprise</h1>
+            <p>Lorem ipsum dolor amet valem setum dolor vale oler sole batum duneil. Lorem ipsum dolor</p>
+        </div>
+        <div>
+            <h1>Département marketing</h1>
+            <p>Lorem ipsum dolor amet valem setum dolor vale oler sole batum duneil. Lorem ipsum dolor</p>
+        </div>
+        <div>
+            <h1>Département juridique</h1>
+            <p>Lorem ipsum dolor amet valem setum dolor vale oler sole batum duneil. Lorem ipsum dolor</p>
+        </div>
+        <div>
+            <h1>Département R&D</h1>
+            <p>Lorem ipsum dolor amet valem setum dolor vale oler sole batum duneil. Lorem ipsum dolor</p>
+        </div>
+        <div>
+            <h1>Département études</h1>
+            <p>Lorem ipsum dolor amet valem setum dolor vale oler sole batum duneil. Lorem ipsum dolor</p>
+        </div>
+        <div>
+            <h1>Documentaliste</h1>
+            <p>Lorem ipsum dolor amet valem setum dolor vale oler sole batum duneil. Lorem ipsum dolor</p>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <h2>Ils nous font confiance</h2>
+    </section>
+{% endblock %}

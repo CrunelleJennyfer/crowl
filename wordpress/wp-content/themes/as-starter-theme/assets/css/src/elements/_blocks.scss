@@ -1,0 +1,90 @@
+////
+/// Headings
+///
+/// @group Elements
+///
+////
+
+/// Contents
+
+p,
+li,
+td,
+th,
+textarea,
+caption,
+pre,
+blockquote,
+label,
+input,
+select,
+textarea {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+td p,
+td .bodytext {
+  margin: 0;
+}
+
+strong,
+optgroup {
+  font-weight: $fw-bold;
+}
+
+/*------------------------------Orange banner---------------------------------------------------------------*/
+.banner {
+  &__main-title {
+    margin: auto;
+  }
+
+  &__main-img {
+    width: 50%;
+    height: auto;
+    margin: 1rem;
+  }
+}
+
+/*------------------------------bleu banner---------------------------------------------------------------*/
+.block-title-subtitle {
+
+  &__main-title {
+    width: 50%;
+  }
+
+  &__maint-text {
+    width: 50%;
+  }
+
+  &__txt p {
+    margin-top: 2rem;
+  }
+}
+
+/*------------------------------text-image---------------------------------------------------------------*/
+.switch {
+  &__main-title {
+    width: 50%
+  }
+
+  &__main-img {
+    width: 50%
+  }
+
+  &__link {
+    margin-top: 1rem;
+  }
+
+  &__link a {
+    color: $white;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: $blue;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+}

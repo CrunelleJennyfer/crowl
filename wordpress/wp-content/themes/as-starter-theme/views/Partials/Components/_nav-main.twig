@@ -1,0 +1,13 @@
+<nav id="nav-main" class="nav-main" role="navigation">
+  <div class="list-inline">
+  <a class="logo-link" href="../" rel="home"><img src="../../wp-content/themes/as-starter-theme/assets/img/kbcrawl-logo.png"></a>
+  {% for item in menu.main.get_items %}
+      <a class="nav-link" href="{{item.get_link}}">{{item.title}}</a>
+      {% if item.get_children %}
+        {% for child in item.get_children %}
+            <a class="nav-link" href="{{child.get_link}}">{{child.title}}</a>
+        {% endfor %}
+      {% endif %}
+  {% endfor %}
+  </div>
+</nav>

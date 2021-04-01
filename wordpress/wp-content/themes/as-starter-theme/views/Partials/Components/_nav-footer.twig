@@ -1,0 +1,14 @@
+{# <nav id="nav-footer" class="nav-footer" role="navigation">
+  <div class="list-inline">
+  {% for item in menu.footer.get_items %}
+      <a class="nav-link" href="{{item.get_link}}">{{item.title}}</a>
+      {% if item.get_children %}
+        {% for child in item.get_children %}
+          <div class="nav-drop-item {{child.classes | join(' ')}}">
+            <a class="nav-link" href="{{child.get_link}}">{{child.title}}</a>
+          </div>
+        {% endfor %}
+      {% endif %}
+  {% endfor %}
+  </div>
+</nav> #}

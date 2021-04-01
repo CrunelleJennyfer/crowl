@@ -1,0 +1,52 @@
+////
+/// Forms
+///
+/// @group Elements
+///
+////
+
+$type-list: text tel email url search date time datetime month week number;
+
+@each $type in $type-list {
+  [type="#{$type}"] {
+    border: .1rem solid $black;
+    border-radius: .3rem;
+    background-color: $white;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+select,
+textarea {
+  border: .1rem solid $black;
+  border-radius: .3rem;
+  background-color: $white;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.orange__newsletter #submit {
+  width: 249px;
+  height: 57px;
+  margin: 0 0 0 18px;
+  padding: 18px 32px 18px 33px;
+  border-radius: 28.5px;
+  border-style: none;
+  background-color: $orange;
+  color: $white;
+}
+
+.orange__newsletter #mail {
+  width: 250px;
+  height: 57px;
+  margin: 0 18px 0 0;
+  padding: 18px 94px 17px 29px;
+  border-radius: 7px;
+  border: solid 1px #dddddd;
+  background-color: white;
+}
