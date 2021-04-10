@@ -110,7 +110,7 @@ registerBlockType(BLOCK_NAME, {
   },
 
   save: ({ attributes: { content = [] } }) =>
-    content.map((element, index) => {
+    content.map((index, element) => {
       <>
         {
           <section key={`repeter-${index}`} class="repeter flex container">
